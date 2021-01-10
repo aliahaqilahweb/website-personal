@@ -1,0 +1,92 @@
+<!DOCTYPE html!>
+<html>
+<head>
+<title>MY WEBSITE</title>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<header>
+<div class="menu-bar">
+<ul>
+<li class="active"><a href="index.html">HOME</a></li>
+<li><a href="BIODATA.html">BIODATA</a></li>
+<li><a href="EXPERIENCE.html">EXPERIENCE</a></li>
+<li><a href="EDUCATION.html">EDUCATION</a></li>
+<li><a href="FAMILY.html">FAMILY</a></li> 
+<li><a href="GALLERY.html">GALLERY</a></li>
+</ul>
+</div>
+
+<script type="text/javascript">
+window.setTimeout("renderDate()",1);
+days = new Array("Minggu","Senin","Selasa","Rabu","Kamis",
+"Jumat","Sabtu");
+months = new Array("Januari","Februari","Maret",
+"April","Mei","Juni","Juli","Agustus","September",
+"Oktober","November","Desember");
+
+function renderDate(){
+var mydate = new Date();
+var year = mydate.getYear();
+if (year < 2000) {
+if (document.all)
+year = "19" + year;
+else
+year += 1900;
+}
+var day = mydate.getDay();
+var month = mydate.getMonth();
+var daym = mydate.getDate();
+if (daym < 10)
+daym = "0" + daym;
+var hours = mydate.getHours();
+var minutes = mydate.getMinutes();
+var seconds = mydate.getSeconds();
+var dn = "AM";
+if (hours >= 12) {
+dn = "PM";
+hours = hours - 12;
+}
+if (hours == 0)
+hours = 12;
+if (minutes <= 9)
+minutes = "0" + minutes;
+if (seconds <= 9)
+seconds = "0" + seconds;
+document.getElementById("jam").innerHTML = "<B>"+days[day]+" "+daym+" "+months[month]+" "+year+"</B> | "+hours+":"+minutes+":"+seconds+" "+dn;
+setTimeout("renderDate()",1000)
+}
+</script>
+</head>
+<body onLoad="renderDate()">
+<center>
+ <div id="jam" style="background: transparent; border: 0px dashed #000; 
+padding: 90px; width: 100px;" align="center"></div>
+
+<img src="qilah1.JPEG" width="200" height="200" border= "4"/>
+ <div class="title">
+ <h1>"𝑬𝒗𝒆𝒓𝒚 𝒔𝒕𝒐𝒓𝒚 𝒉𝒂𝒔 𝒂𝒏 𝒆𝒏𝒅 𝒃𝒖𝒕 𝒊𝒏 𝒍𝒊𝒇𝒆 , 𝒆𝒗𝒆𝒓𝒚 𝒆𝒏𝒅𝒊𝒏𝒈 𝒊𝒔 𝒋𝒖𝒔𝒕 𝒂 𝒏𝒆𝒘 𝒃𝒆𝒈𝒊𝒏𝒏𝒊𝒏𝒈 ❤️🕊"<h1/>
+ <p id="siti fakhira-sosial-media-icon">
+        <a href=""https://www.facebook.com/aliah.aqilah.370" target="_blank" title="Add My Facebook">
+            <img src="http://icons.iconarchive.com/icons/uiconstock/flatin-social/48/facebook-icon.png" />
+        </a>
+        <a href="https://www.twitter.com/AliahAqilah8" target="_blank" title="Follow My Twitter">
+            <img src="http://icons.iconarchive.com/icons/uiconstock/flatin-social/48/twitter-2-icon.png" />
+        </a>
+        <a href="https://www.instagram.com/aqilah_013" target="_blank" title="Follow My Instagram">
+            <img src="http://icons.iconarchive.com/icons/uiconstock/flatin-social/48/instagram-icon.png" />
+        </a>
+        <a href="https://www.youtube.com/channel/UCBu_yolwMYAMz0p81ihjMiQ" target="_blank" title="Subscribe My Channel">
+            <img src="http://icons.iconarchive.com/icons/uiconstock/flatin-social/48/youtube-icon.png" />
+        </a>
+    </p>
+ </div>
+ <div class="footer">
+  <h2>Copyright 2020 by Aliah Aqilah </h2>
+</div
+
+</center>
+
+</header>

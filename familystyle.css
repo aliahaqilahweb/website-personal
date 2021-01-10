@@ -1,0 +1,49 @@
+.{
+	margin: 0px;
+	padding:0px;
+	font-family: san-serif;
+
+}
+header{
+	background-color: pink;
+	height: 115vh;
+	background-size: cover;
+	bacground-position: center;	
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;	
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: black;
+	padding:5px 20px;
+	border: 1px solid;
+	transition: 0.6s;
+	margin-top: 10px;	
+}
+ul li a:hover{
+	background-color: green ;
+	color: white;
+}
+ul li.active a{
+	background-color: white;
+	color: #000;
+}
+.main{
+	max-width: 1100px;
+	margin: auto;	
+}
+.title{
+	position: absolute;
+	top: 09%;
+	left: 35%;	
+}
+.title h1{
+	font-family: san-serif;
+	color: red;
+	font-size: 35px;
